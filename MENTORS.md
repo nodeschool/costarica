@@ -7,7 +7,7 @@ Mentores:
   * Jasson Cascante  ([@yeco](http://twitter.com/yeco))
   * Kevin Blanco  ([@KevinBlancoZ](https://twitter.com/KevinBlancoZ))
   * Alberto Cole  ([@hybrisCole](https://twitter.com/hybrisCole))
-
+  * Alexander Morgan ([@amorganDev](https://twitter.com/amorganDev))
 
 Links:
   * Site oficial: http://costaricajs.co
