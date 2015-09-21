@@ -11,83 +11,112 @@ $icon-font-path: '../fonts/';
   padding: 0.2em 0;
 }
 
-/* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #282828;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+h1, h2, h3 {
+  font-weight: 200;
 }
 
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+p {
+  font-weight: 200;
+}
 
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.site-header {
+  border-top: 5px solid #e6be00;
+  color: #f6f6f6;
+  padding: 150px 0;
+
+  background: #f6f6f6 url("/images/costa_rica_arenal_volcano.jpg") left center;
+  background-size: cover;
+
+  h1 > a {
+    color: #f6f6f6;
+  }
+
+  h1 > a:hover {
+    color: #f6f6f6;
+    text-decoration: none;
+  }
+
+
+  @media screen and (min-width: $screen-sm-min) {
+    padding-top:    ($jumbotron-padding * 5);
+    padding-bottom: ($jumbotron-padding * 5);
+
+    h1,
+    .h1 {
+      font-size: $jumbotron-heading-font-size;
+    }
   }
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
+.who-are-we {
+  margin: 0 auto;
+  border: 3px solid #ffffff;
+  border-radius: 6px;
 
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  @media screen and (min-width: $screen-sm-min) {
+    width: 65%;
   }
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
+.what-we-do {
+  margin: 20px 0 30px;
+  padding: 30px 0;
+
+  @media screen and (min-width: $screen-sm-min) {
+    margin: 40px 0 50px;
+    padding: 50px 0;
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+.what-we-do > div[class^="col-md-"] {
+
+  @media screen and (max-width: $screen-sm-min) {
+    margin-bottom: 65px;
+  }
+}
+
+.questions {
+  background-color: #e6be00;
+  color: #f6f6f6;
+  margin: 30px 0 0;
+  padding: 30px 0;
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
   }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
+  @media screen and (min-width: $screen-sm-min) {
+    margin: 50px 0 0;
+    padding: 50px 0;
+  }
+}
+
+.site-footer {
+  background-color: #127373;
+  color: white;
+
+  padding: 30px 0;
+
+  a {
+    color: #f6f6f6;
+    text-decoration: underline;
   }
 
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
+  @media screen and (min-width: $screen-sm-min) {
 
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+    padding: 50px 0;
   }
 }
