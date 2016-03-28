@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>nodeschool costarica</title>
+  <meta name="description" content="aprende JavaScript y Node.js">
 
   <!-- Place favicon.ico in the root directory -->
 
@@ -43,22 +43,17 @@
 
         <p>Únete a nosotros y aprende a programar. Nos centraremos en Node.js básico. Si ya sabes algo de JavaScript, eso que llevas adelantado; en caso contrario te ayudaremos.</p>
 
-        <p>Join us and learn coding with us. You are going to learn the basics of node.js. It's a plus if you know some JavaScript beforehand, but if not we can help you out.</p>
       </div>
       <div class="col-md-4">
         <h3 class="content-subhead">A tu ritmo</h3>
 
-        <p>Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en nodeschool.io. Podrás seguir aprendiendo después del evento.</p>
-
-        <p>You will go through a set of self-paced challenges. No boring talks. All challenges are Open Source and available online on <a href="http://nodeschool.io/">nodeschool.io</a>. This means you can continue learning after the event.</p>
+        <p>Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en <a href="http://nodeschool.io/">nodeschool.io</a>. Podrás seguir aprendiendo después del evento.</p>
 
       </div>
       <div class="col-md-4">
         <h3 class="content-subhead">Para todos</h3>
 
-        <p>Creemos que programar es increíble, y queremos abrirlo a todo el mundo. Por eso esperamos que todos los participantes sean majos con los demás y que respeten el código de conducta.</p>
-
-        <p>We think coding is awesome and everyone should feel welcome at our event. This includes that we are expecting all participants to be awesome to each other and respect the Code of Conduct.</p>
+        <p>Creemos que programar es increíble, y queremos abrirlo a todo el mundo. Por eso esperamos que todos los participantes sean majos con los demás y que respeten el <a target="_blank" href="https://github.com/nodeschool/costarica/blob/master/codigodeconducta.md">código de conducta</a>.</p>
       </div>
     </section>
   </div>
@@ -100,39 +95,9 @@
       <hr>
       <br>
       <br>
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="https://avatars3.githubusercontent.com/u/391270?v=3&s=460" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Gabo Esquivel</b></h4>
-        <a target="_blank" href="http://twitter.com/gaboesquivel" class="icon icon-twitter"></a>
-        <a target="_blank" href="http://github.com/gaboesquivel" class="icon icon-github"></a>
-        <a target="_blank" href="http://gaboesquivel.com" class="icon icon-pencil"></a>
-      </div><!-- col-lg-3 -->
-
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="https://avatars2.githubusercontent.com/u/54058?v=3&s=460" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Jasson Cascante</b></h4>
-        <a target="_blank" href="http://twitter.com/yeco" class="icon icon-twitter"></a>
-        <a target="_blank" href="http://github.com/yeco" class="icon icon-github"></a>
-      </div><!-- col-lg-3 -->
-
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="https://avatars2.githubusercontent.com/u/1458238?v=3&s=460" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Kevin Blanco</b></h4>
-        <a target="_blank" href="http://twitter.com/kevinblancoz" class="icon icon-twitter"></a>
-        <a target="_blank" href="http://github.com/kevinblanco" class="icon icon-github"></a>
-      </div><!-- col-lg-3 -->
-
-      <div class="col-lg-3 centered">
-        <img class="img img-circle" src="https://avatars3.githubusercontent.com/u/951133?v=3&s=460" height="120px" width="120px" alt="">
-        <br>
-        <h4><b>Alberto Cole</b></h4>
-        <a target="_blank" href="http://twitter.com/hybrisCole" class="icon icon-twitter"></a>
-        <a target="_blank" href="http://github.com/hybrisCole" class="icon icon-github"></a>
-      </div><!-- col-lg-3 -->
-
+      <div id="mentors-container">
+        loading mentors data ...
+      </div>
     </div><!-- row -->
   </div><!-- container -->
 
@@ -175,6 +140,7 @@
   </script>
 
   <!-- build:js scripts/vendor.js -->
+  <script src="/bower_components/handlebars/handlebars.js"></script>
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <!-- endbower -->
@@ -184,9 +150,23 @@
 
   <!-- endbuild -->
 
+  <script id="mentor-template" type="text/x-handlebars-template">
+    <div class="col-lg-3 col-sm-2 centered">
+      <img class="img img-circle" src="https://twitter.com/{{twitter}}/profile_image?size=original" height="120px" width="120px" alt="">
+      <br>
+      <h4><b>{{name}}</b></h4>
+      {{#if website}}<a target="_blank" href="http://gaboesquivel.com" class="icon icon-pencil"></a>{{/if}}
+      {{#if twitter}}<a target="_blank" href="http://twitter.com/{{twitter}}" class="icon icon-twitter"></a>{{/if}}
+      {{#if github}}<a target="_blank" href="http://github.com/{{github}}" class="icon icon-github"></a>{{/if}}
+      <br><br>
+    </div><!-- col-lg-3 -->
+  </script>
+
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
+
+
 </body>
 
 </html>
