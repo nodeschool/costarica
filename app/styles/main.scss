@@ -189,3 +189,12 @@ blockquote cite {
 blockquote cite:before {
     content: "-- "
 }
+
+.event-box{
+  border: 1px solid #CCC;
+  border-radius: 20px;
+  min-height: 100px;
+  line-height: 25px;
+  padding-top: 25px;
+  margin-top: 25px;
+}
