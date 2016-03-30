@@ -30,6 +30,7 @@
       <div class="who-are-we">
         <h1><a href="/">nodeschool costa rica</a></h1>
         <p class="lead">- aprende javascript y node.js -</p>
+        <div class="countdown"></div>
       </div>
     </div>
   </header>
@@ -200,6 +201,7 @@
   <script src="/bower_components/handlebars/handlebars.js"></script>
   <!-- bower:js -->
   <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/jquery.countdown/dist/jquery.countdown.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -218,6 +220,20 @@
       <br><br>
     </div><!-- col-lg-3 -->
   </script>
+
+
+  <script type="text/javascript">
+     $('.countdown').countdown('2016/05/21', function(event) {
+       var $this = $(this).html(event.strftime(''
+         + 'Faltan '
+         + '<span>%w</span> semanas '
+         + '<span>%d</span> días '
+         + '<span>%H</span> horas '
+         + '<span>%M</span> minutos '
+         + '<span>%S</span> segundos'));
+     });
+  </script>
+
 
   <!-- build:js scripts/main.js -->
   <script src="scripts/main.js"></script>
