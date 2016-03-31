@@ -98,6 +98,19 @@ div {
   }
 }
 
+.what-is-nodeSchool {
+  @extend .what-we-do;
+}
+
+.nodeSchool-day {
+  @extend .what-we-do;
+}
+
+.workshops {
+  @extend .what-we-do;
+  padding-bottom: 0px;
+}
+
 .questions {
   background-color: #e6be00;
   color: #f6f6f6;
