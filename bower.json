@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "jquery.countdown": "^2.1.0"
+    "jquery.countdown": "^2.1.0",
+    "handlebars": "^4.0.5"
   },
   "overrides": {
     "bootstrap-sass": {
