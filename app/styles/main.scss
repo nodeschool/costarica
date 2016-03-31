@@ -243,6 +243,11 @@ $header-top: #E6BE00;
   }
 }
 
+//.vertical-scrolling {
+//  text-align:center;
+//  height: auto !important;
+//}
+
 .visible-inline-block {
   display: inline-block;
 }
@@ -339,7 +344,6 @@ $header-top: #E6BE00;
 
 h1 {
   line-height: 70px;
-  height: 70px;
   a {
     display: block;
     padding: 0 10px;

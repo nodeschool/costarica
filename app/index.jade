@@ -31,7 +31,7 @@ html(lang='es')
           i
           i
           i
-      nav
+      //nav //TODO: add correct sections
         ul#menu
           li(data-menuanchor='firstSection')
             a(href='#firstSection', title='First Section') First Section
@@ -60,7 +60,8 @@ html(lang='es')
                 p.lead - aprende javascript y node.js -
                 .countdown
 
-        .container.visible-lg-block.visible-md-block
+      section.vertical-scrolling
+        .container
           .what-we-do.row.text-justify
             .col-md-4
               h3.content-subhead Aprende a programar
@@ -78,47 +79,147 @@ html(lang='es')
                 | Creemos que programar en JavaScript es una habilidad invaluable y en alta demanda, y queremos ponerlo al alcance de todo el mundo.
 
 
-      section.vertical-scrolling.hidden-md.hidden-lg
-        .container
-          .what-we-do.row.text-justify
-            .col-md-4
-              h3.content-subhead Aprende a programar
-              p
-                | Únete a nosotros y aprende a programar. Nos centraremos en Node.js básico. Si ya sabes algo de JavaScript genial!; en caso contrario te ayudaremos. Hay tallers para todos los niveles
-
-      section.vertical-scrolling.hidden-md.hidden-lg
-        .container
-          .what-we-do.row.text-justify
-            .col-md-4
-              h3.content-subhead A tu ritmo
-              p
-                | Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en  
-                a(href='http://nodeschool.io/') nodeschool.io
-                | . Podrás seguir aprendiendo después del evento.
-
-      section.vertical-scrolling.hidden-md.hidden-lg
-        .container
-          .what-we-do.row.text-justify
-            .col-md-4
-              h3.content-subhead Para todos
-              p
-                | Creemos que programar en JavaScript es una habilidad invaluable y en alta demanda, y queremos ponerlo al alcance de todo el mundo.
 
       section.vertical-scrolling
-        h2 fullPage.js
-        h3 This is the third section
+        #nodeschool.container
+          .row.white.what-is-nodeSchool
+            .col-md-12
+              h1.centered Qué es Nodeschool? De qué se trata?
+              hr
+              .text-justify
+                p
+                  | Nodeschool Costa Rica es parte del esfuerzo global para enseñar voluntariamente Node.js y JavaScript a todos a través de talleres presenciales utilizando módulos interactivos que te ayudan a aprender o mejorar, escribiendo código y resolviendo problemas con la ayuda de mentores.
+                p
+                  | El código fuente de los talleres es completamente de código abierto y el esfuerzo es totalmente impulsado por la comunidad. Y la mejor parte es que es gratis!
+                p
+                  | Eventos de Nodeschool se han realizado en todo el mundo, introduciendo con éxito los principiantes a JavaScript, Node.js y la línea de comandos. Los  talleres interactivos de Nodeschool también se puede realizar en la casa, pero atender en persona a los eventos le dará la oportunidad de &nbsp
+                  strong aprender en un ambiente de integración y colaboración
+                  | ; Y también puedes ayudar a otros principiantes si ya tiene experiencia.
+                p
+                  | Más información acerca de la comunidad internacional en  
+                  a(href='http://nodeschool.io') nodeschool.io
       section.vertical-scrolling
-        h2 fullPage.js
-        h3 This is the fourth section
+        #nodeschool-day.container
+              .row.white.nodeSchool-day
+                .col-md-12
+                  h1.centered Nodeschool International Day  #nodeschool-day
+                  hr
+                  br
+                  .text-justify
+                    p
+                      | Cada año se celebra el día internacional de Nodeschool en el cual las ciudades con capítulos de nodeschool organizamos talleres prácticos para aprender Node y JavaScript, y compartimos a travéz de redes sociales, video streaming y chat. El evento se realiza simultáneamente en diferentes lugares alrededor del mundo, incluyendo: San Francisco, Londres, New York, Moscú, Tel Aviv, París, Lisboa, San Diego, Los Angeles, Austin, San José y entre otras.
+                    p
+                      | El próximo #nodeschool-day se el &nbsp
+                      strong sábado 21 de mayo del 2016
+                      | . Proveeremos más detalles en los próximos días.
+                    p
+                      | El año pasado (2015) el capítulo de Madrid grabó un video muy bonito acerca de que se trata y como se vive el nodeschool day.
+                    p.embed-responsive.embed-responsive-16by9
+                      iframe.embed-responsive-item(src='https://www.youtube.com/embed/UQqGQvy4uT4', frameborder='0', allowfullscreen='')
+                    p
+                      | En Costa Rica también tuvimos un evento grande con muchos participantes, puedes leer un resumen del evento en el blog de Costa Rica JS.
+                      br
+                      a(href='http://costaricajs.co/2015/05/Resumen-NodeSchool-International-Day-Mayo-2015-San-Jose-Costa-Rica/', target='_blank') Resumen Nodeschool Day Costa Rica 2015
+                    br
+                    section
+                      h3 Qué esperar de #nodeschool-day?
+                      p
+                        | Esta es nuestro cuarto evento de nodeschool y cada año se pone mejor y mejor. Nuestro objetivo es inspirar a crear y construir cosas increíbles y poner nuestro conocimiento y experiencia al servicio de quienes desean iniciar o mejorar sus habilidades en JavaScript.
+                      p
+                        | Es una excelente ocasión para conectarse con amigos, viejos y nuevos, aprender y contar mentores de lujo para ayudarte en lo que necesites.
+                      p
+                        | También obtendrás el desayuno y el almuerzo gratis, junto con la camiseta oficial y más.
+                      p
+                        | Exigímos que todos los participantes sean amables con los demás y que respeten el &nbsp
+                        a(target='_blank', href='https://github.com/nodeschool/costarica/blob/master/codigodeconducta.md') código de conducta
+                        | .
+                    .row
+                      p.col-md-12
+                        .centered
+                          a.btn.btn-success(href='#', target='_blank') Reserva tu lugar
+                    br
       section.vertical-scrolling
-        .horizontal-scrolling
-          h2 fullPage.js
-          h3
-            | This is the fifth section and it contains the first slide (actually section == first slide)
-        .horizontal-scrolling
-          h2 fullPage.js
-          h3 This is the second slide
-          p.end Thank you!
+        #imagen-costa-rica
+        #talleres.container
+          .row.white.workshops
+            .col-md-12
+              h1.centered Calendario de Talleres
+              hr
+              br
+              .text-justify
+                .row
+                  a.centered.col-xs-12.col-md-6.col-md-offset-3.event-box(href='#')
+                    | Nodeschool International Day
+                    br
+                    | Sábado 21 de Mayo 2016
+                .row
+                  a.centered.col-xs-12.col-md-6.col-md-offset-3.event-box(href='http://www.meetup.com/costaricajs/events/222357068/', target='_blank')
+                    | Nodeschool International Day
+                    br
+                    | Sábado 23 de Mayo 2015
+                .row
+                  a.centered.col-xs-12.col-md-6.col-md-offset-3.event-box(style='clear:both', href='http://www.meetup.com/costaricajs/events/222357068/', target='_blank')
+                    | Primer Node School: Taller Práctico de Node.js
+                    br
+                    | Sábado Jun 21 2014
+          .row
+            .col-md-12
+              p.centered(style='clear:both')
+                a.btn.btn-success(href='http://meetup.com/costaricajs', target='_blank') Subscríbete en  para recibir notificaciones.
+
+
+      section.vertical-scrolling
+        #team.container
+          br
+          .row.white.centered
+            h1.centered Organizadores y Mentores
+            hr
+            br
+            br
+            #mentors-container loading mentors data ...
+          // row
+        // container
+
+      section.vertical-scrolling
+        #sponsors.container
+          br
+          .row.white.centered.sponsors
+            h1.centered Patrocinadores
+            hr
+            br
+            .centered
+              p
+                | No podríamos tener eventos Nodeschool aquí en Costa Rica sin la ayuda de estupendos patrocinadores:
+            .row.white.centered
+              h2 Patrocinadores Oro
+              br
+              .col-md-12.centered
+                img.img(src='images/sponsors/edify.png', height='200px', width='200px', alt='')
+            .row.white.centered
+              br
+              h2 Patrocinadores Plata
+              .col-md-12.centered
+                img.img(src='images/sponsors/la404.png', height='130px', width='150px', alt='')
+            br
+            br
+            a.btn.btn-success(href='#') Conviértete en Patrocinador.
+            br
+          // row
+        // container
+      section.vertical-scrolling
+        .questions
+          .container
+            .row
+              .col-md-12
+                h3 Preguntas? Quieres ayudar o participar?
+                p
+                  | Simplemente abre un issue en
+                  a(href='https://github.com/nodeschool/costaricajs') GitHub
+                  |  y únete a la conversación. Sin aún no estás en Github, puedes crear una cuenta
+                  a(href='https://github.com/join') gratuitamente
+                  | . El taller
+                  a(href='http://nodeschool.io/#git-it') Git-it
+                  |  te ayudará a iniciar.
 
     //#fullPage
     //
@@ -290,6 +391,56 @@ html(lang='es')
     //              | . El taller
     //              a(href='http://nodeschool.io/#git-it') Git-it
     //              |  te ayudará a iniciar.
+
+
+
+
+    ////////////////////////////
+      //section.vertical-scrolling.vertical-scrolling.hidden-md.hidden-lg
+        .container
+          what-we-do.row.text-justify
+            .col-md-4
+              h3.content-subhead Aprende a programar
+              p
+                | Únete a nosotros y aprende a programar. Nos centraremos en Node.js básico. Si ya sabes algo de JavaScript genial!; en caso contrario te ayudaremos. Hay tallers para todos los niveles
+            .col-md-4
+              h3.content-subhead A tu ritmo
+              p
+                | Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en  
+                a(href='http://nodeschool.io/') nodeschool.io
+                | . Podrás seguir aprendiendo después del evento.
+            .col-md-4
+              h3.content-subhead Para todos
+              p
+                | Creemos que programar en JavaScript es una habilidad invaluable y en alta demanda, y queremos ponerlo al alcance de todo el mundo.
+
+      //section.vertical-scrolling.hidden-md.hidden-lg
+      //  .container
+      //    .what-we-do.row.text-justify
+      //      .col-md-4
+      //        h3.content-subhead Aprende a programar
+      //        p
+      //          | Únete a nosotros y aprende a programar. Nos centraremos en Node.js básico. Si ya sabes algo de JavaScript genial!; en caso contrario te ayudaremos. Hay tallers para todos los niveles
+      //
+      //section.vertical-scrolling.hidden-md.hidden-lg
+      //  .container
+      //    .what-we-do.row.text-justify
+      //      .col-md-4
+      //        h3.content-subhead A tu ritmo
+      //        p
+      //          | Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en  
+      //          a(href='http://nodeschool.io/') nodeschool.io
+      //          | . Podrás seguir aprendiendo después del evento.
+      //
+      //section.vertical-scrolling.hidden-md.hidden-lg
+      //  .container
+      //    .what-we-do.row.text-justify
+      //      .col-md-4
+      //        h3.content-subhead Para todos
+      //        p
+      //          | Creemos que programar en JavaScript es una habilidad invaluable y en alta demanda, y queremos ponerlo al alcance de todo el mundo.
+
+    ////////////////////////////
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
