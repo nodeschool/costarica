@@ -237,6 +237,12 @@ $header-top: #E6BE00;
 
 ////////////////////////
 
+@media (max-width: $screen-xs-max) {
+  #fp-nav.right {
+    right: 0px;
+  }
+}
+
 .visible-inline-block {
   display: inline-block;
 }
@@ -452,42 +458,11 @@ body.fp-viewing-fifthSection-1 #menu li:last-child a {
   background: #453659;
 }
 
-/* SECTION STYLES - fullPage.js
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-section {
-  text-align: center;
-  /*background: url('https://unsplash.it/1910/1221?image=626') no-repeat center / cover;*/
-}
-
-h2 {
-  text-transform: lowercase;
-  font-size: 4em;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-weight: 300;
-  font-size: 2.8em;
-}
-
 /* SLIDENAV STYLES - fullPage.js
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: $header-top;
-  //width: 8px;
-  //height: 8px;
-  //margin: -4px 0 0 -4px;
-}
-
-#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
-  //width: 16px;
-  //height: 16px;
-  //margin: -8px 0 0 -8px;
-  //background: transparent;
-  //box-sizing: border-box;
-  //border: 1px solid #24221F;
 }
 
 /* MQ STYLES

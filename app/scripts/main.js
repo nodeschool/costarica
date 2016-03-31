@@ -37,9 +37,7 @@
   $header_top.find('a').on('click', function() {
     $(this).parent().toggleClass('open-menu');
   });
-
-
-
+  
 // fullpage customization
   $('#fullpage').fullpage({
     sectionSelector: '.vertical-scrolling',
@@ -49,7 +47,7 @@
     controlArrows: false,
     anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
     menu: '#menu',
-    navigationPosition: 'left',
+    navigationPosition: 'right',
 
     afterLoad: function(anchorLink, index) {
       if (index == 5) {
