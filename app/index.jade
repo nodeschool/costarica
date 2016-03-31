@@ -27,8 +27,6 @@ html(lang='es')
 
     header
       .header-top.clearfix
-        h1.l-left
-          a(href='#firstSection') Your Logo
         a.l-right.toggle-menu(href='#')
           i
           i
@@ -50,14 +48,62 @@ html(lang='es')
 
     #fullpage
       section.vertical-scrolling
-        h2 fullPage.js
-        h3 This is the first section
-        .scroll-icon
-          p Jump into the last slide
-          a.icon-up-open-big(href='#fifthSection/1')
-      section.vertical-scrolling
-        h2 fullPage.js
-        h3 This is the second section
+        header.site-header
+          .container.text-center
+            .row
+              .col-md-12.visible-inline-block
+                h1
+                  a(href='/') nodeschool costa rica
+            .row
+              .col-md-12.visible-inline-block
+                br
+                p.lead - aprende javascript y node.js -
+                .countdown
+
+        .container.visible-lg-block.visible-md-block
+          .what-we-do.row.text-justify
+            .col-md-4
+              h3.content-subhead Aprende a programar
+              p
+                | Únete a nosotros y aprende a programar. Nos centraremos en Node.js básico. Si ya sabes algo de JavaScript genial!; en caso contrario te ayudaremos. Hay tallers para todos los niveles
+            .col-md-4
+              h3.content-subhead A tu ritmo
+              p
+                | Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en  
+                a(href='http://nodeschool.io/') nodeschool.io
+                | . Podrás seguir aprendiendo después del evento.
+            .col-md-4
+              h3.content-subhead Para todos
+              p
+                | Creemos que programar en JavaScript es una habilidad invaluable y en alta demanda, y queremos ponerlo al alcance de todo el mundo.
+
+
+      section.vertical-scrolling.hidden-md.hidden-lg
+        .container
+          .what-we-do.row.text-justify
+            .col-md-4
+              h3.content-subhead Aprende a programar
+              p
+                | Únete a nosotros y aprende a programar. Nos centraremos en Node.js básico. Si ya sabes algo de JavaScript genial!; en caso contrario te ayudaremos. Hay tallers para todos los niveles
+
+      section.vertical-scrolling.hidden-md.hidden-lg
+        .container
+          .what-we-do.row.text-justify
+            .col-md-4
+              h3.content-subhead A tu ritmo
+              p
+                | Puedes pasar los retos a tu propio ritmo. Sin charlas aburridas. Todos los retos son software libre y están disponibles en  
+                a(href='http://nodeschool.io/') nodeschool.io
+                | . Podrás seguir aprendiendo después del evento.
+
+      section.vertical-scrolling.hidden-md.hidden-lg
+        .container
+          .what-we-do.row.text-justify
+            .col-md-4
+              h3.content-subhead Para todos
+              p
+                | Creemos que programar en JavaScript es una habilidad invaluable y en alta demanda, y queremos ponerlo al alcance de todo el mundo.
+
       section.vertical-scrolling
         h2 fullPage.js
         h3 This is the third section

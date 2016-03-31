@@ -42,7 +42,6 @@
 
 // fullpage customization
   $('#fullpage').fullpage({
-    sectionsColor: ['#B8AE9C', '#348899', '#F2AE72', '#5C832F', '#B8B89F'],
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
     navigation: true,
@@ -50,10 +49,9 @@
     controlArrows: false,
     anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
     menu: '#menu',
+    navigationPosition: 'left',
 
     afterLoad: function(anchorLink, index) {
-      $header_top.css('background', 'rgba(0, 47, 77, .3)');
-      $nav.css('background', 'rgba(0, 47, 77, .25)');
       if (index == 5) {
         $('#fp-nav').hide();
       }
