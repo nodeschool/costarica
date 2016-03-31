@@ -23,4 +23,35 @@
     })
     $('#mentors-container').html(html)
   }
+
+  // navigation
+
+
+// variables
+  var $header_top = $('.header-top');
+  var $nav = $('nav');
+
+
+
+// toggle menu
+  $header_top.find('a').on('click', function() {
+    $(this).parent().toggleClass('open-menu');
+  });
+
+// fullpage customization
+  $('#fullpage').fullpage({
+    sectionSelector: '.vertical-scrolling',
+    slideSelector: '.horizontal-scrolling',
+    navigation: true,
+    slidesNavigation: true,
+    controlArrows: false,
+    //anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection'],
+    menu: '#menu',
+    navigationPosition: 'right',
+    css3: true,
+    autoScrolling:false,
+    verticalCentered: true,
+    fitToSection: false
+  });
+
 })(window.jQuery, window.Handlebars)
