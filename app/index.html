@@ -182,7 +182,11 @@
     <!-- endbuild-->
     <script id="mentor-template" type="text/x-handlebars-template">
       <div class="col-lg-3 col-sm-2 centered">
+      {{#if twitter}}
       <img class="img img-circle" src="https://twitter.com/{{twitter}}/profile_image?size=original" height="120px" width="120px" alt="">
+      {{else}}
+      <img class="img img-circle" src="https://avatars.githubusercontent.com/{{github}}?s=120" height="120px" width="120px" alt="">
+      {{/if}}
       <br>
       <h4><b>{{name}}</b></h4>
       {{#if website}}<a target="_blank" href="{{website}}" class="icon icon-pencil"></a>{{/if}}
