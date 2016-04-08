@@ -226,3 +226,9 @@ blockquote cite:before {
   min-height: 300px;
   background-size: cover;
 }
+
+#mentors-container{
+  >div{
+    min-height:250px;
+  }
+}
