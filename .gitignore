@@ -7,3 +7,5 @@ test/bower_components
 _docs
 .publish
 .DS_Store
+
+.idea
