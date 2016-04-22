@@ -12,6 +12,7 @@ COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 echo "Started deploying"
 
 # Build site.
+bower intall
 gulp build
 
 # Push dist to master.
