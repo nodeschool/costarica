@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp serve",
     "lint": "standard app/scripts/**/*.js",
-    "deploy": "gulp deploy"
+    "deploy": "gulp build && gulp deploy"
   },
   "devDependencies": {
     "babel-core": "^5.5.6",
