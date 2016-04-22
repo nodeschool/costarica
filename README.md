@@ -10,6 +10,8 @@ http://nodeschool.io/costarica
 ### Instrucciones para desarrollo
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+[![Travis-CI](https://travis-ci.org/nodeschool/costarica.svg)](https://travis-ci.org/nodeschool/costarica)
+
 
 usar node version 4. - [Automatic Node.js Version Switching](http://gaboesquivel.com/blog/2015/automatic-node-dot-js-version-switching/)  
 instalar dependencias :  `npm install && bower install`
