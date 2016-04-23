@@ -12,6 +12,7 @@ COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 echo "Started deploying"
 
 # Build site.
+npm install -g bower 
 bower intall
 gulp build
 
