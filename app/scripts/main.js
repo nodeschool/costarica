@@ -1,14 +1,10 @@
 ;(function ($, Handlebars) {
-  var organizersUrl = 'http://raw.githubusercontent.com/CostaRicaJS/organizers/master/organizers-data.json'
   var mentorsUrl = 'https://raw.githubusercontent.com/CostaRicaJS/nodeschool-mentors-2016/master/mentors-data.json'
   var mentorTemplate = Handlebars.compile($('#mentor-template').html())
 
-  $.when($.getJSON(organizersUrl), $.getJSON(mentorsUrl))
-    .then(function (organizersResponse, mentorsResponse) {
-      if (organizersResponse[1] !== 'success' || mentorsResponse[1] !== 'success') {
-        return handleError()
-      }
-      displayOrganizersAndMentors($.extend({}, organizersResponse[0], mentorsResponse[0]))
+  $.getJSON(mentorsUrl)
+    .then(function (mentors) {
+      displayOrganizersAndMentors(mentors)
     }, handleError)
 
   function handleError (err) {

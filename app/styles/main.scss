@@ -34,11 +34,10 @@ div {
 }
 
 .site-header {
-  border-top: 5px solid #e6be00;
+  border-top: 5px solid #f1eb24;
   color: #f6f6f6;
-  padding: 150px 0;
-
-  background: #f6f6f6 url("../images/nodeschool-costarica.jpg") left center;
+  padding: 80px 0;
+  background: #f6f6f6 url("../images/nodeschool-site-top.png") center center;
   background-size: cover;
 
   h1 > a {
@@ -73,9 +72,10 @@ div {
 
 .who-are-we {
   margin: 0 auto;
-  border: 3px solid #ffffff;
-  border-radius: 6px;
-
+  .lead{
+    margin-top: 15px;
+    font-size: 30px;
+  }
   @media screen and (min-width: $screen-sm-min) {
     width: 65%;
   }
@@ -86,7 +86,7 @@ div {
   padding: 30px 0;
 
   @media screen and (min-width: $screen-sm-min) {
-    margin: 40px 0 50px;
+    margin: 30px 0 50px;
     padding: 50px 0;
   }
 }
@@ -98,57 +98,24 @@ div {
   }
 }
 
-.what-is-nodeSchool {
-  @extend .what-we-do;
-}
-
-.nodeSchool-day {
-  @extend .what-we-do;
-}
-
+.what-is-nodeSchool,
+.nodeSchool-day,
 .workshops {
+  @extend .what-we-do;
+}
+
+.que-esperar, .site-footer, .questions  {
   @extend .what-we-do;
   padding-bottom: 0px;
 }
 
-.questions {
-  background-color: #e6be00;
-  color: #f6f6f6;
-  margin: 30px 0 0;
-  padding: 30px 0;
-
-  a {
-    color: #ffffff;
-    text-decoration: underline;
-  }
-
-  @media screen and (min-width: $screen-sm-min) {
-    margin: 50px 0 0;
-    padding: 50px 0;
-  }
-}
-
-.site-footer {
-  background-color: #127373;
-  color: white;
-
-  padding: 30px 0;
-
-  a {
-    color: #f6f6f6;
-    text-decoration: underline;
-  }
-
-  @media screen and (min-width: $screen-sm-min) {
-
-    padding: 50px 0;
-  }
+.questions{
+  background: url("../images/nodeschool_site_cri.png") center top no-repeat #f1eb24;
 }
 
 // ====  helpers
 /* Paragraph & Typographic */
 p {
-    line-height: 28px;
     margin-bottom: 25px;
 }
 
@@ -213,12 +180,18 @@ blockquote cite:before {
 }
 
 .event-box{
-  border: 1px solid #CCC;
+  border: 2px solid yellow;
   border-radius: 20px;
   min-height: 100px;
   line-height: 25px;
-  padding-top: 25px;
-  margin-top: 25px;
+  display: block;
+  text-decoration: none;
+  padding-top: 20px;
+  color: #000;
+  &:hover{
+    color: #000;
+    text-decoration: none;
+  }
 }
 
 #imagen-costa-rica{
@@ -227,13 +200,101 @@ blockquote cite:before {
   background-size: cover;
 }
 
-#mentors-container{
-  >div{
-    min-height:380px;
-  }
-}
 .mentor-links a{
   font-size:20px;
   margin: 0 3px;
   text-decoration: none !important;
 }
+
+.bg-yellow{
+  background-color: #f1eb24;
+}
+
+.bg-green{
+  background-color: #85cdb8;
+}
+
+.bg-gray{
+  background-color: #e6eced;
+}
+
+.bg-ligth-gray{
+  background-color: #f6f6f6;
+}
+
+.bg-green-dots{
+  background: url("../images/nodeschool_site_green_dots.png") center center no-repeat;
+  background-size: cover;
+}
+
+#nodeschool{
+  background-image: url("../images/nodeschool_site_sloth.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+#nodeschool-day{
+  background-image: url("../images/nodeschool_site_volcano.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.green-transition{
+  background: url("../images/nodeschool_site_green_transition.png") center top #e6eced no-repeat;
+  min-height: 50px;
+}
+
+.people-image{
+  width: 100%
+}
+
+.img-organizadores{
+  margin: 0 20px;
+}
+
+.img-sponsors{
+  max-width: 200px;
+  max-height: 75px;
+  margin: 20px;
+}
+
+
+// .hexagon {
+//     overflow: hidden;
+//     visibility: hidden;
+//     -webkit-transform: rotate(120deg);
+//        -moz-transform: rotate(120deg);
+//         -ms-transform: rotate(120deg);
+//          -o-transform: rotate(120deg);
+//             transform: rotate(120deg);
+//     cursor: pointer;
+//     }
+// .hexagon-in1 {
+//     overflow: hidden;
+//     width: 100%;
+//     height: 100%;
+//     -webkit-transform: rotate(-60deg);
+//        -moz-transform: rotate(-60deg);
+//         -ms-transform: rotate(-60deg);
+//          -o-transform: rotate(-60deg);
+//             transform: rotate(-60deg);
+//     }
+// .hexagon-in2 {
+//     width: 100%;
+//     height: 100%;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+//     visibility: visible;
+//     -webkit-transform: rotate(-60deg);
+//        -moz-transform: rotate(-60deg);
+//         -ms-transform: rotate(-60deg);
+//          -o-transform: rotate(-60deg);
+//             transform: rotate(-60deg);
+//     }
+//
+// .hexagon2 {
+//   width: 100px;
+//   height: 200px;
+//   margin: -80px 0 0 20px;
+// }
