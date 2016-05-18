@@ -23,8 +23,16 @@ h1, h2, h3 {
   font-weight: 200;
 }
 
+.h2, h2 {
+  margin-bottom: 40px;
+}
+
 p {
   font-weight: 200;
+}
+
+hr {
+  width: 100%;
 }
 
 div {
@@ -36,7 +44,7 @@ div {
 .site-header {
   border-top: 5px solid #f1eb24;
   color: #f6f6f6;
-  padding: 50px !important;
+  padding: 50px 15px!important;
   background: url("../images/nodeschool-site-top.png") center center #86cdb7;
   background-size: cover;
 
@@ -75,6 +83,10 @@ div {
   .lead{
     margin-top: 15px;
     font-size: 30px;
+
+    @media screen and (max-width: $screen-sm-min) {
+      font-size: 22px;
+    }
   }
   @media screen and (min-width: $screen-sm-min) {
     width: 65%;
@@ -83,7 +95,6 @@ div {
 
 .what-we-do {
   margin: 20px 0 30px;
-  padding: 30px 0;
 
   @media screen and (min-width: $screen-sm-min) {
     margin: 30px 0 50px;
@@ -94,7 +105,7 @@ div {
 .what-we-do > div[class^="col-md-"] {
 
   @media screen and (max-width: $screen-sm-min) {
-    margin-bottom: 65px;
+    margin-bottom: 30px;
   }
 }
 
@@ -108,6 +119,29 @@ div {
   @extend .what-we-do;
   padding-bottom: 0px;
 }
+
+.que-esperar {
+  ul {
+    list-style: none;
+
+    @media screen and (max-width: $screen-sm-min) {
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .important-notes {
+    padding-left: 40px;
+
+    @media screen and (max-width: $screen-sm-min) {
+      padding-left: 0;
+    }
+  }
+}
+
 
 .questions{
   background: url("../images/nodeschool_site_cri.png") center top no-repeat #f1eb24;
@@ -187,6 +221,7 @@ blockquote cite:before {
   display: block;
   text-decoration: none;
   padding-top: 20px;
+  margin-bottom: 20px;
   color: #000;
   &:hover{
     color: #000;
@@ -200,10 +235,29 @@ blockquote cite:before {
   background-size: cover;
 }
 
-.mentor-links a{
-  font-size:20px;
-  margin: 0 3px;
-  text-decoration: none !important;
+#mentors-container {
+
+  h4 {
+    min-height: 40px;
+  }
+  @media screen and (max-width: $screen-sm-min) {
+    h4 {
+      min-height: auto;
+    }
+    & > div {
+      margin-bottom: 40px;
+    }
+    br {
+      display: none;
+    }
+  }
+  .mentor-links {
+    a {
+      font-size:20px;
+      margin: 0 3px;
+      text-decoration: none !important;
+    }
+  }
 }
 
 .bg-yellow{
@@ -227,10 +281,16 @@ blockquote cite:before {
   background-size: cover;
 }
 
-#nodeschool{
+#nodeschool {
+
   background-image: url("../images/nodeschool_site_sloth.png");
   background-position: right bottom;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: $screen-sm-min) {
+    background-size: 27%;
+  }
+
 }
 
 #nodeschool-day{
@@ -249,7 +309,7 @@ blockquote cite:before {
 }
 
 .img-organizadores{
-  margin: 0 20px;
+  margin: 10px;
 }
 
 .img-sponsors{
@@ -258,6 +318,9 @@ blockquote cite:before {
   margin: 20px;
 }
 
+.cta-meetup-container {
+  margin-top: 40px;
+}
 
 // .hexagon {
 //     overflow: hidden;
