@@ -3,20 +3,16 @@
 # Exit if any subcommand fails.
 set -e
 
-USERNAME=gaboesquivel
-EMAIL=contact@gaboesquivel.com
 ORIGIN_URL=`git config --get remote.origin.url`
-ORIGIN_CREDENTIALS=${ORIGIN_URL/\/\/github.com/\/\/$GITHUB_TOKEN@github.com}
 COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 
-echo "Started deploying"
-
+echo "Started building static content"
 # Build site.
-npm install -g bower
-bower install
-gulp build
+npm run build
 
-# Push dist to master.
+
+echo "Started deploying"
+# Push dist to gh-pages.
 cd dist
 git init
 git remote add origin $ORIGIN_URL
@@ -26,10 +22,7 @@ git config user.email "$EMAIL"
 
 git add -fA
 git commit --allow-empty -m "$COMMIT_MESSAGE [ci skip]"
-git push -f -q $ORIGIN_CREDENTIALS master
-
-# Move back to previous branch.
-git checkout -
+git push -f gh-pages
 
 echo "Deployed Successfully!"
 

@@ -1,0 +1,20 @@
+machine:
+  node:
+    version: v4.4.1
+dependencies:
+  pre:
+    - npm install -g bower
+  override:
+    - npm install
+    - bower install
+  cache_directories:
+    - node_modules
+    - bower_components
+ test:
+   override:
+    - npm run lint
+deployment:
+  development:
+    branch: page-source
+    commands:
+      - ./bin/deploy.sh
